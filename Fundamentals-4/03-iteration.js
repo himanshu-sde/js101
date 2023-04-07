@@ -80,3 +80,28 @@ const cats3 = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
 const filtered3 = cats3.filter((cat) => cat.startsWith("L"));
 console.log(filtered3);
 // [ "Leopard", "Lion" ]
+
+// for in loop => for in statement loops through the properties of an Object:
+//    for (key in object) {
+//      // code block to be executed
+//    }
+
+const person = { fname: "John", lname: "Doe", age: 25 };
+
+let text = "";
+for (let x in person) {
+  text += person[x] + " ";
+}
+console.log(text); // John Doe 25
+
+// For In Over Arrays
+//    for (variable in array) {
+//      code
+//    }
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+for (let x in numbers) {
+  txt += numbers[x] + " ";
+}
+console.log(txt); // 45 4 9 16 25

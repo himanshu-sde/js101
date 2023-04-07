@@ -1,0 +1,9 @@
+body {
+  background-color: cadetblue;
+  margin: 0;
+  padding: 0;
+}
+
+div#container .display {
+  background-color: bisque;
+}
